@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>E-commerce product page</title>
+  <link rel="icon" href="./images/favicon-32x32.png" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <header class="site-header container">
+    <div class="left">
+      <!-- Mobile menu button -->
+      <button class="menu-btn" aria-label="Open menu">
+        <img src="./images/icon-menu.svg" alt="" />
+      </button>
+
+      <!-- Logo -->
+      <a class="logo" href="#"><img src="./images/logo.svg" alt="Sneakers Logo"></a>
+
+      <!-- Desktop navigation -->
+      <nav class="desktop-nav">
+        <ul>
+          <li><a href="#">Collections</a></li>
+          <li><a href="#">Men</a></li>
+          <li><a href="#">Women</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="right">
+      <!-- Cart -->
+      <button class="cart-btn" aria-label="Open cart">
+        <img src="./images/icon-cart.svg" alt="Cart">
+        <span class="cart-count visually-hidden">0</span>
+      </button>
+      <!-- Avatar -->
+      <img class="avatar" src="./images/image-avatar.png" alt="User avatar">
+    </div>
+  </header>
+
+  <!-- Mobile menu overlay -->
+  <div class="mobile-menu" aria-hidden="true">
+    <div class="panel">
+      <button class="menu-close" aria-label="Close menu">
+        <img src="./images/icon-close.svg" alt="">
+      </button>
+      <nav class="mobile-nav">
+        <ul>
+          <li><a href="#">Collections</a></li>
+          <li><a href="#">Men</a></li>
+          <li><a href="#">Women</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <main class="container main">
+    <section class="product">
+      <div class="gallery">
+        <img class="main-image" id="mainImage" src="./images/image-product-1.jpg" alt="Product image 1" />
+        <div class="thumbnails" role="list">
+          <button class="thumb active" data-index="1" aria-pressed="true"><img src="./images/image-product-1-thumbnail.jpg" alt="thumb 1"></button>
+          <button class="thumb" data-index="2"><img src="./images/image-product-2-thumbnail.jpg" alt="thumb 2"></button>
+          <button class="thumb" data-index="3"><img src="./images/image-product-3-thumbnail.jpg" alt="thumb 3"></button>
+          <button class="thumb" data-index="4"><img src="./images/image-product-4-thumbnail.jpg" alt="thumb 4"></button>
+        </div>
+      </div>
+
+      <div class="details">
+        <p class="company">SNEAKER COMPANY</p>
+        <h1 class="title">Fall Limited Edition Sneakers</h1>
+        <p class="description">
+          These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the weather can offer.
+        </p>
+
+        <div class="price-row">
+          <div class="price">
+            <span class="current">$125.00</span>
+            <span class="badge">50%</span>
+          </div>
+          <div class="original-price">$250.00</div>
+        </div>
+
+        <div class="purchase">
+          <div class="quantity" role="group" aria-label="Select quantity">
+            <button class="qty-btn" id="decrease" aria-label="Decrease quantity">-</button>
+            <input id="quantity" type="text" inputmode="numeric" aria-label="Quantity" value="0" readonly>
+            <button class="qty-btn" id="increase" aria-label="Increase quantity">+</button>
+          </div>
+          <button class="add-btn" id="addToCart">
+            <img src="./images/icon-cart.svg" alt="" />
+            Add to cart
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Cart dropdown -->
+  <div id="cartDropdown" class="cart-dropdown" aria-hidden="true">
+    <h2>Cart</h2>
+    <div id="cartContent" class="cart-content">
+      <p class="empty">Your cart is empty.</p>
+    </div>
+  </div>
+
+  <!-- Lightbox overlay (desktop) -->
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <div class="lightbox-inner">
+      <button id="lightboxClose" class="lightbox-close" aria-label="Close image viewer">
+        <img src="./images/icon-close.svg" alt="">
+      </button>
+      <img id="lightboxImage" src="./images/image-product-1.jpg" alt="Large product">
+      <div class="lightbox-thumbs">
+        <button class="lb-thumb active" data-index="1"><img src="./images/image-product-1-thumbnail.jpg" alt=""></button>
+        <button class="lb-thumb" data-index="2"><img src="./images/image-product-2-thumbnail.jpg" alt=""></button>
+        <button class="lb-thumb" data-index="3"><img src="./images/image-product-3-thumbnail.jpg" alt=""></button>
+        <button class="lb-thumb" data-index="4"><img src="./images/image-product-4-thumbnail.jpg" alt=""></button>
+      </div>
+      <button class="lb-nav prev" id="prevLB" aria-label="Previous image"><img src="./images/icon-previous.svg" alt=""></button>
+      <button class="lb-nav next" id="nextLB" aria-label="Next image"><img src="./images/icon-next.svg" alt=""></button>
+    </div>
+  </div>
+
+  <script src="dist/main.js" defer></script>
+
+  </body>
+</html>
