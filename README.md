@@ -76,11 +76,11 @@ All colors, typography, and layout specifications follow the provided **style-gu
 -   ├──`design/` - Design reference images
 -  ├──`images/` - Project images and icons
 -  ├──`src/`
--          ──`main.ts` - TypeScript logic
+          ──`main.ts` - TypeScript logic
 -  ├──`styles.css` - Main styles
 -  ├──`index.html` - HTML markup
 -  ├──`dist/`
--          ── `main.js` - Compiled JavaScript
+          ── `main.js` - Compiled JavaScript
 -  ├──`style-guide.md` - Color, typography, layout guide
 -  ├──`tsconfig.json` - TypeScript configuration
 -  ├──`package.json` - Project metadata & scripts
@@ -118,15 +118,15 @@ Make sure you have the following installed:
 - [TypeScript](https://www.typescriptlang.org/) **installed globally**.
 
 ### Clone the repo
- ```git clone https://github.com/Edith-Anurika-Monday1/ECOMMERCE-PRODUCT-PAGE.git```
-```cd ECOMMERCE-PRODUCT-PAGE-MAIN```
+-  ```git clone https://github.com/Edith-Anurika-Monday1/ECOMMERCE-PRODUCT-PAGE.git```
+- ```cd ECOMMERCE-PRODUCT-PAGE-MAIN```
 
 #### Configure TypeScript
 Run this command in your terminal if you have typescript uninstalled ```npm install -g typescript```.
 A tsconfig.json is included in the project, If you need to recreate it, run the below command;
-```tsc --init```
+- ```tsc --init```
 to compile your ts file, run this command;
-```npx tsc```
+- ```npx tsc```
 Note that this is a static HTML/CSS/TS to JS project. You can:
 Open index.html directly in your browser, OR Use a local server for live reload to previw your work.
 
