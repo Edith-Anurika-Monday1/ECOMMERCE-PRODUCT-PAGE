@@ -72,19 +72,19 @@ All colors, typography, and layout specifications follow the provided **style-gu
 
 ## Project Structure
 
-`ecommerce-product-page/`
-  ├──`design/` - Design reference images
-  ├──`images/` - Project images and icons
-  ├──`src/`
-          ──`main.ts` - TypeScript logic
-  ├──`styles.css` - Main styles
-  ├──`index.html` - HTML markup
-  ├──`dist/`
-          ── `main.js` - Compiled JavaScript
-  ├──`style-guide.md` - Color, typography, layout guide
-  ├──`tsconfig.json` - TypeScript configuration
-  ├──`package.json` - Project metadata & scripts
-  ├──`README.md` - This file
+- `ecommerce-product-page/`
+-   ├──`design/` - Design reference images
+-  ├──`images/` - Project images and icons
+-  ├──`src/`
+-          ──`main.ts` - TypeScript logic
+-  ├──`styles.css` - Main styles
+-  ├──`index.html` - HTML markup
+-  ├──`dist/`
+-          ── `main.js` - Compiled JavaScript
+-  ├──`style-guide.md` - Color, typography, layout guide
+-  ├──`tsconfig.json` - TypeScript configuration
+-  ├──`package.json` - Project metadata & scripts
+-  ├──`README.md` - This file
 
   ---
 
